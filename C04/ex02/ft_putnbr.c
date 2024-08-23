@@ -31,8 +31,6 @@ void	ft_putnbr(int nb)
 		write(1, "-", 1);
 	}
 	if (nb >= 10)
-    {
 		ft_putnbr(nb / 10);
-    }
     ft_putchar((nb % 10) + 48);
 }
