@@ -1,0 +1,14 @@
+======================================./0-0-print_odd.txt=========================================
+Assignment name  : print_odd
+Expected files   : print_odd.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that displays all ood numbers from 0 to 9
+odd letters in lowercase, followed by a newline.
+
+Example:
+
+$> ./maff_alpha | cat -e
+13579$
+==========================================================================================
