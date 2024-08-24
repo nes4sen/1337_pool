@@ -1,0 +1,12 @@
+======================================occ_a.txt=========================================
+Assignment name  : occ_a
+Expected files   : occ_a.c
+Allowed functions: None
+--------------------------------------------------------------------------------
+
+Write a function that takes a string and return how many times it incounters 'A'
+
+The function should be declared as follows
+
+int occ_a(char *str);
+==========================================================================================

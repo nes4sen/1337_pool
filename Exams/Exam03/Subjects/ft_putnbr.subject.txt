@@ -1,0 +1,12 @@
+======================================ft_putnbr.txt=========================================
+Assignment name  : ft_putnbr
+Expected files   : ft_putnbr.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a function that takes a number and print it
+
+The function should be declared as follows
+
+void ft_putnbr(int nb);
+==========================================================================================
