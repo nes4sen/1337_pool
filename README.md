@@ -31,10 +31,10 @@
 
 | Exam | Subject |
 | --- | --- |
-| Exam 00 |  |
-| Exam 01 |  |
-| Exam 02 |  |
-| Exam 03 |  |
+| Exam 00 | [Exam00](./Exams/Exam00/) |
+| Exam 01 | [Exam01](./Exams/Exam01/) |
+| Exam 02 | [Exam02](./Exams/Exam02/) |
+| Exam 03 | [Exam03](./Exams/Exam03/) |
 </div>
 
 - Tips:
@@ -42,6 +42,7 @@
     - Remove unnecessary Files, Tests etc
     - only push with allowed function or else you'll get `-42`
     - push in rendu :)
+    - a day before the Exam forget about days and go prepare, don't be stupide like others
 
 ### Rush
 - Watch out for overflow
