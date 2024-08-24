@@ -7,8 +7,8 @@
 | Name | Subject |
 | --- | --- |
 | aff_a or ft_ft    | [aff_a](./Subjects/aff_a.subject.txt)                             |
-| ft_inc            | [ft_inc](./Subjects/ft_inc_subject.txt)                           |
-| odd               | [odd](./Subjects/odd_subject.txt)                                 |
+| ft_inc            | [ft_inc](./Subjects/ft_inc.subject.txt)                           |
+| odd               | [odd](./Subjects/odd.subject.txt)                                 |
 | count_len         | [count_len](./Subjects/count_len.subject.txt)                     |
 | rotone            | [rotone](./Subjects/rotone.subject.txt)                           |
 | ft_strrev         | [ft_strrev](./Subjects/ft_strrev.subject.txt)                     |
@@ -25,3 +25,4 @@
     - **rotone** same as **first_word** and **last_word**
     - you should solve all exercises that are related to string manipulation
     - [Solutions](http://nigal.freeshell.org/42/exam-solutions/)
+    - If You Havn't found a solution try make you're own

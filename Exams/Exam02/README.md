@@ -15,7 +15,7 @@
 | union                             | [union](./Subjects/union.subject.txt)                                                                                                         |
 | count_words                       | [count_words](./Subjects/count_words.subject.txt)                                                                                             |
 | ft_rrange - ft_range - ft_itoa    | [ft_rrange](./Subjects/ft_rrange.subject.txt) - [ft_range](./Subjects/ft_range.subject.txt) - [ft_itoa](./Subjects/ft_itoa.subject.txt)       |
-| ft_split                          | [ft_split](./Subjects/ft_split_subject.txt)                                                                                                   |
+| ft_split                          | [ft_split](./Subjects/ft_split.subject.txt)                                                                                                   |
 
 </div>
 
@@ -25,4 +25,4 @@
     - **rotone** same as **first_word** and **last_word**
     - you should solve all exercises that are related to string manipulation
     - [Solutions](http://nigal.freeshell.org/42/exam-solutions/)
-
+    - If You Havn't found a solution try make you're own

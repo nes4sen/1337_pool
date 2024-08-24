@@ -25,3 +25,4 @@
     - **rotone** same as **first_word** and **last_word**
     - you should solve all exercises that are related to string manipulation
     - [Solutions](http://nigal.freeshell.org/42/exam-solutions/)
+    - If You Havn't found a solution try make you're own
