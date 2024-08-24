@@ -40,7 +40,7 @@
 - Tips:
     - Clean you're code before Submission
     - Remove unnecessary Files, Tests etc
-    - only push with allowed function or else you'll get `-42`
+    - only push with allowed functions or else you'll get `-42`
     - push in rendu :)
     - a day before the Exam forget about days and go prepare, don't be stupide like others
 
@@ -52,4 +52,4 @@
     - Gcc Flags `-Wall -Werror -Wextra`
     - How to execute The Project
     
-    If one of you're team answer wrong or didn't know you will get `0`
+    If one of you're team answer wrong or didn't know the answer you will get `0`
