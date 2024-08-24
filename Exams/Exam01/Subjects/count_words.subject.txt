@@ -10,6 +10,6 @@ A word is a section of string delimited by spaces/tabs or by the start/end of
 the string.
 
 Your function should be declared as follows
-int count_words(char *str);
 
+int count_words(char *str);
 ============================================================================

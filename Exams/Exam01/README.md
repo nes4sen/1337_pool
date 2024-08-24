@@ -18,3 +18,10 @@
 | count_words       | [count_words](./Subjects/count_words.subject.txt)                 |
 
 </div>
+
+- Hints
+    - **search_and_replace** same as **wdmatch**, **union** and **inter**
+    - **count_len** just fancy name of **ft_strlen**
+    - **rotone** same as **first_word** and **last_word**
+    - you should solve all exercises that are related to string manipulation
+    - [Solutions](http://nigal.freeshell.org/42/exam-solutions/)

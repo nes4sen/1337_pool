@@ -1,4 +1,4 @@
-======================================./0-0-print_odd.txt=========================================
+======================================print_odd.txt=========================================
 Assignment name  : print_odd
 Expected files   : print_odd.c
 Allowed functions: write
@@ -9,6 +9,6 @@ odd letters in lowercase, followed by a newline.
 
 Example:
 
-$> ./maff_alpha | cat -e
+$> ./print_odd | cat -e
 13579$
 ==========================================================================================
