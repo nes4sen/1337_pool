@@ -1,0 +1,11 @@
+======================================ft_inc.txt=========================================
+Assignment name  : ft_inc
+Expected files   : ft_inc.c
+Allowed functions: None
+--------------------------------------------------------------------------------
+
+Write a function that takes an int pointer and increment it's value
+
+The function must be declared as follows
+void	*ft_inc(int *a);
+==========================================================================================

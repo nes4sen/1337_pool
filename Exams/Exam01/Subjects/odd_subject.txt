@@ -1,0 +1,13 @@
+======================================odd.txt=========================================
+Assignment name  : odd
+Expected files   : odd.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that displays all ood numbers from 0 to 9, followed by a newline.
+
+Example:
+
+$> ./odd | cat -e
+13579$
+==========================================================================================
