@@ -1,0 +1,15 @@
+======================================count_words.txt=========================================
+Assignment name  : count_words
+Expected files   : count_words.c
+Allowed functions: None
+--------------------------------------------------------------------------------
+
+Write a function that count words from the given string
+
+A word is a section of string delimited by spaces/tabs or by the start/end of
+the string.
+
+Your function should be declared as follows
+
+int count_words(char *str);
+============================================================================

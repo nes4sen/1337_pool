@@ -1,0 +1,12 @@
+======================================count_len.txt=========================================
+Assignment name  : count_len
+Expected files   : count_len.c
+Allowed functions: None
+--------------------------------------------------------------------------------
+
+Write a function that returns the length of a string.
+
+Your function must be declared as follows:
+
+int	count_len(char *str);
+==========================================================================================

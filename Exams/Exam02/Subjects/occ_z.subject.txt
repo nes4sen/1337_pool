@@ -1,0 +1,12 @@
+======================================occ_z.txt=========================================
+Assignment name  : occ_z
+Expected files   : occ_z.c
+Allowed functions: None
+--------------------------------------------------------------------------------
+
+Write a function that takes a string and return how many times it incounters 'Z'
+
+The function should be declared as follows
+
+int occ_a(char *str);
+==========================================================================================

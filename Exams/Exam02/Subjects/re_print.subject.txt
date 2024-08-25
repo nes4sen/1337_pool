@@ -1,0 +1,12 @@
+======================================re_print.txt=========================================
+Assignment name  : re_print
+Expected files   : re_print.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a programme that prints given argument in a reversed order 
+followed by a new line
+
+if number os argument is not 1, just write a new line
+
+============================================================================
