@@ -3,100 +3,92 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi_base.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nosahimi <nosahimi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: duskblade <duskblade@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/08 12:39:07 by nosahimi          #+#    #+#             */
-/*   Updated: 2024/08/10 15:44:29 by nosahimi         ###   ########.fr       */
+/*   Updated: 2024/08/25 15:03:47 by duskblade        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-int	ft_strlen(char *str)
-{
-	int	count;
-
-	count = 0;
-	while (str[count])
-		count++;
-	return (count);
-}
-
-int	ft_check_errors(char *base)
+int		ft_atoi_base_error(char *base)
 {
 	int	i;
 	int	j;
 
 	i = 0;
-	if (base[i] == '+' || base[i] == '-' || ft_strlen(base) < 2)
-		return (0);
 	while (base[i])
 	{
-		j = i + 1;
+		j = 0;
 		while (base[j])
 		{
-			if ((base[i] == base[j]) || base[j] == '+' || base[j] == '-')
-				return (1);
+			if (base[i] == base[j] && i != j)
+				return (0);
 			j++;
 		}
+		if (base[i] == ' ' || base[i] == '\f' || base[i] == '\n' ||
+				base[i] == '\r' || base[i] == '\t' || base[i] == '\v' ||
+				base[i] == '-' || base[i] == '+')
+			return (0);
 		i++;
 	}
-	return (0);
+	return (i);
 }
 
-int	ft_find_index(char c, char *base)
+int		ft_atoi_base_test(char str, char *base)
 {
-	int	i;
+	int retour;
+	int i;
 
+	retour = 0;
 	i = 0;
 	while (base[i])
 	{
-		if (base[i] == c)
+		if (str == base[i])
 			return (i);
 		i++;
 	}
 	return (-1);
 }
 
-int	ft_white_spaces(char *base)
+int		ft_atoi_base_search(char *str, int *i)
 {
-	while (*base)
+	int mult;
+
+	mult = 1;
+	while (str[*i] == ' ' || str[*i] == '\f' || str[*i] == '\n' ||
+		str[*i] == '\r' || str[*i] == '\t' || str[*i] == '\v')
+		*i += 1;
+	while (str[*i] == '-' || str[*i] == '+')
 	{
-		if (*base == ' ' || (*base >= 9 && *base <= 13))
-			return (1);
-		base++;
+		if (str[*i] == '-')
+			mult *= -1;
+		*i += 1;
 	}
-	return (0);
+	return (mult);
 }
 
-int	ft_atoi_base(char *str, char *base)
+int		ft_atoi_base(char *str, char *base)
 {
-	long	nb;
-	int		base_len;
-	int		sign;
+	int		i;
+	int		mult;
+	int		nb;
+	int		tmp;
+	int		len;
 
 	nb = 0;
-	if (ft_check_errors(base) || ft_white_spaces(base))
-		return (0);
-	while (*str == ' ' || (*str >= 9 && *str <= 13))
-		str++;
-	sign = 1;
-	while (*str == '+' || *str == '-')
+	i = 0;
+	len = ft_atoi_base_error(base);
+	if (len >= 2)
 	{
-		if (*str == '-')
-			sign *= -1;
-		str++;
+		mult = ft_atoi_base_search(str, &i);
+		tmp = ft_atoi_base_test(str[i], base);
+		while (tmp != -1)
+		{
+			nb = (nb * len) + tmp;
+			i++;
+			tmp = ft_atoi_base_test(str[i], base);
+		}
+		return (nb *= mult);
 	}
-	base_len = ft_strlen(base);
-	while (ft_find_index(*str, base) >= 0 && *str)
-	{
-		nb = (nb * base_len) + (ft_find_index(*str, base));
-		str++;
-	}
-	return ((int)(nb) * sign);
-}
-int main(int ac, char **av)
-{
-	ac = ac + 0;
-	printf("%d \n", ft_atoi_base(av[1], av[2]));
+	return (0);
 }
